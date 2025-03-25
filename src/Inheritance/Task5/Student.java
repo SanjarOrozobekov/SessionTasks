@@ -4,16 +4,16 @@ public class Student {
     private String fullName;
     private String phoneNumber;
     private String address;
-    private long bankaccount;
+    private int bankAccount;
 
     public Student() {
     }
 
-    public Student(String fullName, String phoneNumber, String address, long bankaccount) {
+    public Student(String fullName, String phoneNumber, String address, int bankAccount) {
         this.fullName = fullName;
         this.phoneNumber = phoneNumber;
         this.address = address;
-        this.bankaccount = bankaccount;
+        this.bankAccount = bankAccount;
     }
 
     public String getFullName() {
@@ -40,21 +40,36 @@ public class Student {
         this.address = address;
     }
 
-    public long getBankaccount() {
-        return bankaccount;
+    public int getBankAccount() {
+        return bankAccount;
     }
 
-    public void setBankaccount(long bankaccount) {
-        this.bankaccount = bankaccount;
+    public void setBankAccount(int bankAccount) {
+        this.bankAccount = bankAccount;
+    }
+    public int getPayPerMonth(Apartment[] apartments) {
+        for (Apartment apartment : apartments){
+            return apartment.getPrice() / 3;
+
+        }
+        return 0;
     }
 
+    public int liveIn(Student[] students,Apartment[] apartments) {
+        int apartmentPrice = getPayPerMonth(apartments);
+        for (Student student : students) {
+            System.out.println("student.bankAccount = " + student.bankAccount);
+            return (student.getBankAccount() / apartmentPrice);
+        }
+        return 0;
+    }
     @Override
     public String toString() {
         return "Student{" +
                 "fullName='" + fullName + '\'' +
                 ", phoneNumber='" + phoneNumber + '\'' +
                 ", address='" + address + '\'' +
-                ", bankaccount=" + bankaccount +
+                ", bankAccount=" + bankAccount +
                 '}';
     }
 }

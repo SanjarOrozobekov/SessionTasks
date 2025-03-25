@@ -1,5 +1,7 @@
 package Inheritance.Task5;
 
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
 
@@ -14,14 +16,31 @@ public class Main {
         Student[] students1 = {student1,student2,student3};
         Student[] students2 = {student4,student5,student6};
 
-        Apartment apartment1 = new Apartment("KG Group",50000,"Jal 13",students1);
-        Apartment apartment2 = new Apartment("Bai Tash",60000,"Alma-Ata 23",students2);
+        Apartment apartment1 = new Apartment("apartment1", 30000, "Tunguch",students1);
+        Apartment apartment2 = new Apartment("apartment2", 50000, "asanbai",students2);
 
         Apartment[] apartments = {apartment1,apartment2};
+        System.out.print("write the apartment: ");
+        String consoleTitle = new Scanner(System.in).nextLine();
+        apartment1.getApartment(consoleTitle, apartments);
 
-
+        System.out.println("student3.getPayPerMonth(apartments) = " + student3.getPayPerMonth(apartments));
+        System.out.println("student3.liveIn(students1,apartments) = " + student3.liveIn(students1, apartments));
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
 // 1) ЭКИ КЛАСС ТУЗУНУЗ
 //* APARTMENT (TITLE, PRICE, ADDRESS)
 //* STUDENT ( FULLNAME, PHONENUMBER, ADDRESS,
