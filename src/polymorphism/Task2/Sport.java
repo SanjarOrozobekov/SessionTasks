@@ -1,4 +1,4 @@
-package class_work.Task1.Task2;
+package polymorphism.Task2;
 
 public class Sport {
         private String teamName;

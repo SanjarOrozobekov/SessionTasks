@@ -1,4 +1,4 @@
-package class_work.Task1;
+package polymorphism.Task1;
 
 public class Cow {
     private String name;
@@ -50,7 +50,7 @@ public class Cow {
 
     @Override
     public String toString() {
-        return "class_work.Task1.Cow:" +
+        return "class_work.polymorphism.task3.Task1.Cow:" +
                 "Name: " + name + " | " +
                 "Age: " + age +" | " +
                 "Colour: " + colour + " | " +

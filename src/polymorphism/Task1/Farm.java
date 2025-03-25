@@ -1,4 +1,4 @@
-package class_work.Task1;
+package polymorphism.Task1;
 
 import java.util.Arrays;
 
@@ -62,7 +62,7 @@ public class Farm {
 
     @Override
     public String toString() {
-        return "class_work.Task1.Farm| " +
+        return "class_work.polymorphism.task3.Task1.Farm| " +
                 "Address: " + address +"\n"+
                 "Cows: " + Arrays.toString(cows) + "\n"+
                 "Horses: " + Arrays.toString(horses) + "\n"+

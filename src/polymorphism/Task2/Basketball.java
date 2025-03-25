@@ -1,4 +1,4 @@
-package class_work.Task1.Task2;
+package polymorphism.Task2;
 
 public class Basketball extends Sport{
     public Basketball() {

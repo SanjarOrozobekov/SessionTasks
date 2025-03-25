@@ -1,4 +1,4 @@
-package class_work.Task1;
+package polymorphism.Task1;
 
 public class Horse extends Cow {
     public Horse() {
