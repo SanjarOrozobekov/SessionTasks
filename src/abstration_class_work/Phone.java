@@ -1,6 +1,6 @@
-package class_work;
+package abstration_class_work;
 
-public class Phone extends Deviice{
+public class Phone extends Deviice {
     private String kamera;
     private boolean isSupport5G;
 

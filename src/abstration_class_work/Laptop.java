@@ -1,8 +1,6 @@
-package class_work;
+package abstration_class_work;
 
-import java.util.Arrays;
-
-public class Laptop extends Deviice{
+public class Laptop extends Deviice {
     private String processor;
     private String RAM;
 

@@ -1,4 +1,4 @@
-package class_work;
+package abstration_class_work;
 
 public abstract class Deviice {
     private int id;
